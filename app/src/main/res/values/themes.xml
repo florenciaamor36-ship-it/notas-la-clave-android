@@ -69,14 +69,6 @@
         <item name="cornerSize">18dp</item>
     </style>
 
-    <style name="FloatingActionButtonPrimary" parent="Widget.Material3.FloatingActionButton.Primary">
-        <item name="android:backgroundTint">?attr/colorPrimary</item>
-        <item name="tint">?attr/colorOnPrimary</item>
-        <item name="android:elevation">8dp</item>
-        <item name="elevation">8dp</item>
-        <item name="pressedTranslationZ">12dp</item>
-    </style>
-
     <style name="FileChip" parent="Widget.Material3.Chip.Assist">
         <item name="android:stateListAnimator">@null</item>
         <item name="android:paddingBottom">16dp</item>
@@ -147,6 +139,9 @@
     <style name="FloatingActionButtonPrimary" parent="Widget.Material3.FloatingActionButton.Primary">
         <item name="android:backgroundTint">?attr/colorPrimary</item>
         <item name="tint">?attr/colorOnPrimary</item>
+        <item name="android:elevation">8dp</item>
+        <item name="elevation">8dp</item>
+        <item name="pressedTranslationZ">12dp</item>
     </style>
 
     <style name="RoundedTextInput">
