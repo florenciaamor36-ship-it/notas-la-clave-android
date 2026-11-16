@@ -217,7 +217,7 @@
     <string name="import_action">Importar</string>
     <string name="import_backup">Importar copia de seguridad</string>
     <string name="import_backup_password_hint">Si su copia de seguridad no está protegida con contraseña, simplemente presione Importar, de lo contrario ingrese la contraseña correcta.</string>
-    <string name="import_from_notally">Para importar desde Notally, usar “%1$s” en su lugar</string>
+    <string name="import_from_notally">Para importar una copia compatible existente, usar “%1$s” en su lugar</string>
     <string name="import_other">Importar notas de otra aplicación</string>
     <string name="import_settings">Importar ajustes</string>
     <string name="import_settings_failure">Fallo al importar ajustes, ¿has escogido el fichero correcto\?</string>
