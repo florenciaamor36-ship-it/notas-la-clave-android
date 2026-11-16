@@ -219,7 +219,7 @@
     <string name="import_action">Import</string>
     <string name="import_backup">Import backup</string>
     <string name="import_backup_password_hint">If your backup is not password-protected simply press Import, otherwise enter the correct password.</string>
-    <string name="import_from_notally">To import from Notally, simply use \"%1$s\" instead</string>
+    <string name="import_from_notally">To import an existing compatible backup, use \"%1$s\" instead</string>
     <string name="import_other">Import Notes from other App</string>
     <string name="import_settings">Import Settings</string>
     <string name="import_settings_failure">Failed to import settings, did you choose the correct file\?</string>
@@ -292,8 +292,8 @@
     <string name="no_auto_sort">No Autosort</string>
     <string name="none">None</string>
     <string name="not_exists">\'%1$s\' does not exist</string>
-    <string name="notally" translatable="false">Notally</string>
-    <string name="Notas La Clave_raw_database" translatable="false">Notas La Clave Raw Database</string>
+    <string name="notally" translatable="false">Notas La Clave</string>
+    <string name="notallyx_raw_database" translatable="false">Notas La Clave Raw Database</string>
     <string name="note">Note</string>
     <string name="note_text_too_long_truncated">Text too long, truncated to %1$d characters</string>
     <string name="note_too_big_truncating">Note is too big to save, it was truncated to %1$s characters (was: %2$s)</string>
