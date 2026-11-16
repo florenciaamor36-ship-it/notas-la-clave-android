@@ -78,10 +78,11 @@ android {
 
     signingConfigs {
         create("release") {
-            storeFile = file(providers.gradleProperty("RELEASE_STORE_FILE").get())
-            storePassword = providers.gradleProperty("RELEASE_STORE_PASSWORD").get()
-            keyAlias = providers.gradleProperty("RELEASE_KEY_ALIAS").get()
-            keyPassword = providers.gradleProperty("RELEASE_KEY_PASSWORD").get()
+            // Release signing is supplied only for release builds; debug builds stay self-contained.
+            storeFile = providers.gradleProperty("RELEASE_STORE_FILE").orNull?.let(::file)
+            storePassword = providers.gradleProperty("RELEASE_STORE_PASSWORD").orNull ?: ""
+            keyAlias = providers.gradleProperty("RELEASE_KEY_ALIAS").orNull ?: ""
+            keyPassword = providers.gradleProperty("RELEASE_KEY_PASSWORD").orNull ?: ""
         }
     }
 
