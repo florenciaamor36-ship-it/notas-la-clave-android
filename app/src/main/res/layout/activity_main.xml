@@ -50,6 +50,8 @@
             android:contentDescription="@string/make_list"
             android:tooltipText="@string/make_list"
             style="@style/FloatingActionButtonPrimary"
+            app:backgroundTint="@null"
+            android:background="@drawable/fab_gold_3d"
             app:srcCompat="@drawable/checkbox" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -63,6 +65,8 @@
             android:contentDescription="@string/take_note"
             android:tooltipText="@string/take_note"
             style="@style/FloatingActionButtonPrimary"
+            app:backgroundTint="@null"
+            android:background="@drawable/fab_coral_3d"
             app:srcCompat="@drawable/edit" />
 
     </RelativeLayout>
