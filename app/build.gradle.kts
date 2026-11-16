@@ -87,9 +87,9 @@ android {
 
     buildTypes {
         debug {
-            applicationIdSuffix = ".debug"
-            versionNameSuffix = "-DEBUG"
-            resValue("string", "app_name", "NotallyX DEBUG")
+            applicationIdSuffix = ".laclave"
+            versionNameSuffix = "-LACLAVE-PRUEBA"
+            resValue("string", "app_name", "Notas La Clave")
         }
         release {
             isCrunchPngs = false
