@@ -9,7 +9,12 @@
     android:layout_marginEnd="4dp"
     android:layout_marginBottom="8dp"
     android:checkable="true"
-    app:cardElevation="0dp">
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:strokeWidth="1dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerLow"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.NotesCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
