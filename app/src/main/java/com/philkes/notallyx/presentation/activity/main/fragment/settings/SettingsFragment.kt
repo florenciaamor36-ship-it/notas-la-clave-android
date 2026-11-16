@@ -115,7 +115,7 @@ class SettingsFragment : Fragment() {
             setupSecurity(binding)
             setupSettings(binding)
         }
-        setupAbout(binding)
+            // Original developer links/ratings are intentionally omitted from this branded build.
         return binding.root
     }
 
