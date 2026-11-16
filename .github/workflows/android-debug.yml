@@ -14,12 +14,22 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+      - uses: android-actions/setup-android@v3
       - uses: gradle/actions/setup-gradle@v4
       - name: Build debug APK
         run: |
           chmod +x ./gradlew
-          ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v4
+          ./gradlew --no-daemon assembleDebug --stacktrace 2>&1 | tee build.log
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build-log
+          path: build.log
+          if-no-files-found: ignore
+      - name: Upload debug APK
+        if: success()
+        uses: actions/upload-artifact@v4
         with:
           name: notas-la-clave-debug-apk
           path: app/build/outputs/apk/debug/*.apk
